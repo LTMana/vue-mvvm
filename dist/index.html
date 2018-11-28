@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MVVM</title>
+</head>
+
+<body>
+    <div id="app">
+        <!-- 双向数据绑定 靠的是表单 -->
+        <input type="text" v-model="message">
+        <div>{{message}}</div>
+        <ul>
+            <li>{{message}}</li>
+        </ul>
+        {{message}}
+    </div>
+    <script src="/app.c3f9f951.js"></script>
+    <script>var vm = new MVVM({
+  el: '#app',
+  data: {
+    message: 'hello world!'
+  }
+});</script>
+</body>
+
+</html>
